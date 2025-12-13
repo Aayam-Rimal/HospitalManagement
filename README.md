@@ -80,7 +80,7 @@ A simple **Command Line Interface (CLI) application** for managing patients, doc
 1. Clone the repository:
 
 ```bash
-git clone <repo_url>
+git clone git@github.com:Aayam-Rimal/HospitalManagement.git
 cd hospital-management-cli
 
 ```
@@ -101,10 +101,10 @@ pip install -r requirements.txt
 
 4. Set up your .env file with your postgre credentials
 
-dbname=your_db_name
-user=your_db_user
-password=your_db_password
-host=your_db_host
+- dbname=your_db_name
+- user=your_db_user
+- password=your_db_password
+- host=your_db_host
 
 5. Ensure your PostgreSQL database has the tables created (run the SQL scripts if provided)
 
