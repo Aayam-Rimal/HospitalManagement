@@ -52,6 +52,7 @@ def add_patient_details():
             conn.commit()
 
     except Exception as e:
+            conn.rollback()
             print("Error occured",e)
             return
 
@@ -91,6 +92,7 @@ def view_doc_appts():
                 print(f"{dname}|{pname}|{appointmentdate}|{status}")
         
     except ValueError:
+        conn.rollback()
         print("Invalid input!enter number!")
         return
         
@@ -118,6 +120,7 @@ def view_patients_history():
         
 
     except ValueError:
+        conn.rollback()
         print("Invalid input! enter a number")
         return
     
@@ -139,6 +142,7 @@ def view_prescriptions():
         
 
     except ValueError:
+        conn.rollback()
         print("Invalid id!!")
         return
     
